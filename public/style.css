@@ -1,0 +1,103 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#add-review,
+#reviews {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-review h2,
+#reviews h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#review-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#reiew-form input[type="text"],
+#reiew-form input[type="number"],
+#reiew-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#review-form textarea {
+  resize: vertical;
+}
+
+#review-form button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#review-form button[type="submit"]:hover {
+  background-color: 4cae4c;
+}
+
+#review-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.review-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.review-card p {
+  margin-bottom: 5px;
+}
+
+.rating {
+  font-weight: bold;
+  color: #ffa500;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 1em 0;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+}

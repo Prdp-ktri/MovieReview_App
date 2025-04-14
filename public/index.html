@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Review App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movie Review App</h1>
+  </header>
+
+  <main>
+    <section id="add-review">
+      <h2>Add a Review</h2>
+      <form id="review-form">
+        <div>
+          <label for="movie-title">Movie Title:</label>
+          <input type="text" id="movie-title" name="title" required />
+        </div>
+        <div>
+          <label for="image">Upload Cover:</label>
+          <input type="file" id="image" name="coverImage" accept="image/*" />
+        </div>
+        <div>
+          <label for="rating">Rating (1-5):</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" required />
+        </div>
+        <div>
+          <label for="review-text">Review:</label>
+          <textarea id="review-text" name="review" rows="5" required></textarea>
+        </div>
+        <div>
+          <label for="reviewer">Your Name:</label>
+          <input type="text" id="reviewer" name="name" required />
+        </div>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+
+    <section id="reviews">
+      <h2>Recent Reviews</h2>
+      <div id="reviews-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movie Review App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
